@@ -1,22 +1,200 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap|Raleway|family=Yeon+Sung&display=swap");
+* {
+  border: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
+html {
+  border-left: 5px dotted hotpink;
+  margin-left: 20px;
+height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0 auto;
+  padding: 130px;
+  font-family: Georgia;
+  background-image: url("../images/header-img_alltagsalternativen.png"),
+  url("../images/Klecks2.png"), url("../images/structure2.jpg") ;
+  background-repeat: no-repeat;
+  background-position: left top, center right, center center;
+  background-attachment: fixed;
+}
+.body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.logo {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+h1 {
+  font-family: Cabin sketch;
+  font-style: italic;
+  font-size: 9vw;
+  text-shadow: 3px 3px #e2098e;
+  color: linen;
+}
+nav ul {
+  border-right: 5px dotted #e2098e;
+  list-style-type: none;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+li {
+  padding: 14px 16px;
+}
+li a {
+  text-decoration-line: none;
   color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 1.9em;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 1px 1px #e2098e;
+}
+li a:hover:not(.active) {
+  border: 1px solid #e2098e;
+  color: #af24a9;
+}
+.textbox,
+.textbox2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2%;
+  justify-content: space-evenly;
+}
+.textbox2 {
+  flex-direction: row-reverse;
+}
+.textbox3 {
+  display: block;
+  padding: 2%;
+}
+.text,
+.text2,
+.text3,
+.text4 {
+  font-family: "Raleway", sans-serif;
+  margin-left: auto;
+  font-size: 15px;
+  text-align: justify;
+  color: #444;
+}
+.text {
+  border-left: 1px solid #e2098e;
+  padding: 5%;
+}
+.text2 {
+  border-right: 1px solid #e2098e;
+  padding: 5%;
+}
+.text3 {
+  text-align: center;
+  padding: 5px;
+}
+.text4 {
+  color: #e2098e;
+  text-align: center;
+}
+h2 {
+  color: #af24a9;
+  text-transform: uppercase;
+  padding: 5%;
+  text-align: center;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion,
+p {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  transition: 0.4s;
+}
+.accordion {
+  padding: 18px;
+}
+.accordion i{
+  color:#af24a9;
+}
+.panel p {
+  padding: 18px;
+  border-left: 1px dotted #e2098e;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  border: 1px solid #af24a9;
 }
 
-.App-link {
-  color: #09d3ac;
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+.box {
+  font-family: "Amatic SC", cursive;
+  margin: 50px auto;
+ border: 1px solid #af24a9;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: slateblue;
+  position: relative;
+  font-size: 2em;
+}
+.color2 {
+  border: 1px solid indigo;
+}
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #af24a9;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #af24a9;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+  top: 6px;
+}
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 10px solid indigo;
+  border-left: 10px solid transparent;
+  border-top: 10px solid indigo;
+  border-bottom: 10px solid transparent;
+  left: -20px;
+  top: 6px;
+}
+.fa-hand-point-up {
+  font-size: 2em;
+  padding-right: 15px;
+  z-index: 1;
+}
+.footerbox {
+  text-align: center;
+  border-top: 1px solid #e2098e;
+  padding-top: 3%;
+  word-spacing: 10px;
+  margin-top: auto;
+}
+footer a {
+  color: #e2098e;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
