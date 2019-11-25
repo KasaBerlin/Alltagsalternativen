@@ -2,9 +2,9 @@ import React from "react";
 
 const Was = () => (
   <React.Fragment>
-    <div class="textbox">
+    <div className="textbox">
       <h2>Was ist Sexismus?</h2>
-      <article class="text">
+      <article className="text">
         Sexismus ist eine Form der Diskriminierung. Das Wort setzt sich zusammen
         aus dem englischen sex (Geschlecht) und der Endung –ismus, welche auf
         die Konstruktion und Essentialisierung dessen hinweist. Sexismus hat
@@ -13,9 +13,9 @@ const Was = () => (
         Rubrik Gender IFAQ's anklickt. In Reihenfolge lesen ist empfehlenswert ;
       </article>
     </div>
-    <div class="textbox2">
+    <div className="textbox2">
       <h2>Zu den Schreibweisen</h2>
-      <article class="text2">
+      <article className="text2">
         Wir benutzen Anführungsstriche bei Wörtern wie „Männern“ und „Frauen“,
         um auf die Konstruktion dieser Begriffe hinzuweisen. Wir gendern mit
         Unterstrichen, damit auch Menschen, welche sich weder mit der

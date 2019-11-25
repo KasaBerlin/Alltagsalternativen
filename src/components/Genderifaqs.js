@@ -1,10 +1,28 @@
-import React from "react";
+import React,{useState} from "react";
 
-const Ifaqs = () => (
+const Ifaqs = () => {
+const [show, setShow] = useState(false);
+
+// useEffect(()=>{
+//   let acc = document.querySelectorAll(".accordion");
+//   let arrows = document.querySelectorAll(".accordion i");
+//   for (let i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", e => {
+//       e.target.classList.toggle("active");
+//       let panel = e.target.nextElementSibling;
+//       if (panel.style.display === "block") {
+//         panel.style.display = "none";
+//         arrows[i].classList.replace("fa-angle-double-up", "fa-angle-double-down");
+//       } else {
+//         panel.style.display = "block";
+//         arrows[i].classList.replace("fa-angle-double-down", "fa-angle-double-up");
+//       }})
+
+return(
   <React.Fragment>
-    <div class="textbox">
+    <div className="textbox">
       <h2>GENDER IFAQ‘s (infrequently asked questions)</h2>
-      <article class="text">
+      <article className="text">
         Infrequently asked questions - Fragen, die viel zu selten über Gender
         gestellt werden, und die helfen, die Tragweite von Sexismus zu erkennen.
         Wenn ihr die Fragen anklickt, landet ihr bei kleinen Texten, die um
@@ -13,12 +31,12 @@ const Ifaqs = () => (
       </article>
     </div>
     <div>
-      <button class="accordion">
-        <i class="fas fa-angle-double-down"></i>
+      <button className="accordion" onClick={() => setShow(true)}>
+        <i className="fas fa-angle-double-down"></i>
         Warum müssen Neugeborene in Deutschland Namen bekommen, die eindeutig
         „männlich“ oder „weiblich“ zugeordnet werden können?
       </button>
-      <div class="panel">
+      <div className="panel" onClose={() => setShow(false)} show={show} delay={3000} autohide="true">
         <p>
           Sexismus beginnt grundlegend mit der Unterscheidung von Menschen in
           zwei und nur zwei (hierarchisierte) Geschlechter und der Annahme, dass
@@ -36,13 +54,13 @@ const Ifaqs = () => (
           „männlich“ oder „weiblich“ oder auch jenseits von Geschlecht zu.
         </p>
       </div>
-      <button class="accordion">
-        <i class="fas fa-angle-double-down"></i>
+      <button className="accordion">
+        <i className="fas fa-angle-double-down"></i>
         Warum gilt es als selbstverständlich, Geschichten zu erzählen, in denen
         die Geschlechtsidentität der Protagonist_innen vom Anfang bis zum Ende
         unverändert bleibt?
       </button>
-      <div class="panel">
+      <div className="panel">
         <p>
           Zusammenhängend mit der zweigeschlechtlichen Norm wird stetig davon
           ausgegangen, dass das zugeschriebene Geschlecht einer Person auch
@@ -51,13 +69,13 @@ const Ifaqs = () => (
           müsse.
         </p>
       </div>
-      <button class="accordion">
-        <i class="fas fa-angle-double-down"></i>
+      <button className="accordion">
+        <i className="fas fa-angle-double-down"></i>
         Warum werden fast alle Trailer zu Kinofilmen von Stimmen gesprochen,
         welche als „männlich“ wahrgenommen werden? Und warum ist mir das noch
         nie aufgefallen?
       </button>
-      <div class="panel">
+      <div className="panel">
         <p>
           Die Konstruktion von Zweigeschlechtlichkeit führt auch zu
           Geschlechterrollen, also der Zuschreibung von Eigenschaften und
@@ -83,14 +101,14 @@ const Ifaqs = () => (
           im nächsten Absatz.
         </p>
       </div>
-      <button class="accordion">
-        <i class="fas fa-angle-double-down"></i>
+      <button className="accordion">
+        <i className="fas fa-angle-double-down"></i>
         Warum favorisieren Erbschafts-, Steuer-, und Asylrecht
         institutionalisierte Paarverhältnisse? Warum haben in westlichen
         Gesellschaften Lesben und Schwule ein „Coming-Out“, während Heter@s das
         nicht haben (müssen)?
       </button>
-      <div class="panel">
+      <div className="panel">
         <p>
           Auf gleiche Art und Weise wie „Männlichkeit“ wird auch
           Heter@sexualität als allgemeinmenschlich universalisiert und stets als
@@ -102,12 +120,12 @@ const Ifaqs = () => (
           Vorstellungen sowie normierende Vorstellungen über Sexualität.
         </p>
       </div>
-      <button class="accordion">
-        <i class="fas fa-angle-double-down"></i>
+      <button className="accordion">
+        <i className="fas fa-angle-double-down"></i>
         Warum wird „Mädchen“ meist selbstverständlich suggeriert, sie würden
         später Ehefrauen und Mütter werden?
       </button>
-      <div class="panel">
+      <div className="panel">
         <p>
           Sexismus bedeutet auch, dass Menschen über Kinder und Familie
           charakterisiert werden, also zum Beispiel als „verheiratet, kinderlos“
@@ -126,8 +144,8 @@ const Ifaqs = () => (
           nicht wählbar dargestellt.
         </p>
       </div>
-      <button class="accordion">
-        <i class="fas fa-angle-double-down"></i>
+      <button className="accordion">
+        <i className="fas fa-angle-double-down"></i>
         Warum können wir vergessen, wie eine Person heißt, wo sie aufgewachsen
         ist und wann sie Geburtstag hat, nicht aber, ob wir sie als „Mann“ oder
         „Frau“ wahrgenommen haben? Warum scheint es so unvorstellbar, dass es
@@ -135,7 +153,7 @@ const Ifaqs = () => (
         dass Menschen „zwischen“ zwei Gendern liegen oder vom einen ins andere
         gewechselt haben?
       </button>
-      <div class="panel">
+      <div className="panel">
         <p>
           Sexismus konstruiert Geschlecht immer als Bezugsrahmen. Somit wird
           ebenfalls un-denkbar, dass Menschen sich zwischen den 2 anerkannten
@@ -158,9 +176,9 @@ const Ifaqs = () => (
         </p>
       </div>
     </div>
-    <div class="textbox2">
+    <div className="textbox2">
       <h2>Anmerkung</h2>
-      <article class="text2">
+      <article className="text2">
         Nachdem ihr nun all das gelesen habt, ist uns noch eine Sache wichtig.
         Wir möchten darauf hinweisen, dass Sexismus nicht einfach umkehrbar ist.
         Wenn zum Beispiel „Männer“ mit einer Rollenzuschreibung beleidigt
@@ -183,6 +201,6 @@ const Ifaqs = () => (
       </article>
     </div>
   </React.Fragment>
-);
+)}
 
-export default Ifaqs;
+export default Ifaqs

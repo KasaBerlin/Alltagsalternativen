@@ -1,14 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 
-function App() {
-  return (
+const App=()=>( 
     <div className="App">
       <header className="App-header"></header>
-      <div class="textbox">
+      <div className="textbox">
         <h2>Über uns</h2>
-        <article class="text">
+        <article className="text">
           Wir haben uns zu dritt zusammengefunden, da wir keine Lust auf
           sexistische Sprüche haben. Wir haben uns passende Antworten ausgedacht
           und möchten diese mit euch teilen. Hier könnt Ihr euch über Sexismus
@@ -18,6 +17,6 @@ function App() {
       </div>
     </div>
   );
-}
+
 
 export default App;

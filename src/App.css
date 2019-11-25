@@ -12,8 +12,8 @@ body {
   margin: 0 auto;
   padding: 130px;
   font-family: Georgia;
-  background-image: url("../images/header-img_alltagsalternativen.png"),
-  url("../images/Klecks2.png"), url("../images/structure2.jpg") ;
+  background-image: url("./images/header-img_alltagsalternativen.png"),
+  url("./images/Klecks2.png"), url("./images/structure2.jpg") ;
   background-repeat: no-repeat;
   background-position: left top, center right, center center;
   background-attachment: fixed;
