@@ -1,6 +1,23 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 
-const Zwei = () => (
+const Zwei = () => {
+const [count, setCount] = useState(0);
+
+useEffect(()=>{
+let boxes=document.querySelectorAll(".box")
+for(let i =0; i<boxes.length;i++){
+  boxes[i].style.display="none";
+  boxes[0].style.display="block";
+  boxes[i].addEventListener("click", (e)=>{
+    setCount(+1)
+    boxes[0].remove()
+    // boxes[count].style.display="block";
+console.log(count)
+  })
+}
+})
+
+  return (
   <React.Fragment>
     <div className="textbox">
       <h2>Zwei geschlechtlichkeit?</h2>
@@ -128,6 +145,6 @@ const Zwei = () => (
       </article>
     </div>
   </React.Fragment>
-);
+)};
 
 export default Zwei;

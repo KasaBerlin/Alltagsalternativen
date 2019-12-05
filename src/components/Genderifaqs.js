@@ -1,11 +1,11 @@
-import React,{useState, useEffect} from "react";
+import React,{useEffect} from "react";
 
-export default function Ifaqs(){
-const [show, setShow] = useState(false);
+function Ifaqs() {
 
 useEffect(()=>{
   let acc = document.querySelectorAll(".accordion");
   let arrows = document.querySelectorAll(".accordion i");
+  
   for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", e => {
       e.target.classList.toggle("active");
@@ -17,9 +17,9 @@ useEffect(()=>{
         panel.style.display = "block";
         arrows[i].classList.replace("fa-angle-double-down", "fa-angle-double-up");
       }})
+    }})
 
-return(
-  <React.Fragment>
+return(<React.Fragment>
     <div className="textbox">
       <h2>GENDER IFAQ‘s (infrequently asked questions)</h2>
       <article className="text">
@@ -31,12 +31,12 @@ return(
       </article>
     </div>
     <div>
-      <button className="accordion" onClick={() => setShow(true)}>
+      <button className="accordion">
         <i className="fas fa-angle-double-down"></i>
         Warum müssen Neugeborene in Deutschland Namen bekommen, die eindeutig
         „männlich“ oder „weiblich“ zugeordnet werden können?
       </button>
-      <div className="panel" onClose={() => setShow(false)} show={show} delay={3000} autohide="true">
+      <div className="panel">
         <p>
           Sexismus beginnt grundlegend mit der Unterscheidung von Menschen in
           zwei und nur zwei (hierarchisierte) Geschlechter und der Annahme, dass
@@ -190,7 +190,7 @@ return(
         Medien, Staat und Alltag reproduziert und gefestigt wird, oft als
         „normal“ wahrgenommen wird und häufig nicht einmal der öffentlichen
         Thematisierung für wert befunden wird.
-        <p></p>
+       <br></br>
         ** Wir sind uns der Problematik bewusst, dass wir mit der Bezeichnung
         „nicht männlich“ eine große, heterogene Gruppe Menschen mit
         verschiedensten Selbstbezeichnungen (erneut und somit reproduzierend) in
@@ -200,5 +200,7 @@ return(
         (unterschiedliche) sexistische Diskriminierungserfahrungen machen.
       </article>
     </div>
-  </React.Fragment>
-)}
+    </React.Fragment>);
+    }
+
+export default Ifaqs;

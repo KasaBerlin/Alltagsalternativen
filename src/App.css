@@ -139,18 +139,23 @@ p {
 .panel {
   padding: 0 18px;
   display: none;
-  overflow: hidden;
+}
+.textbox3{
+  overflow:hidden;
 }
 .box {
   font-family: "Amatic SC", cursive;
   margin: 50px auto;
- border: 1px solid #af24a9;
+  border: 1px solid #af24a9;
   padding: 20px;
   text-align: center;
   font-weight: 900;
   color: slateblue;
-  position: relative;
+  position: absolute;
+  background-color: wheat;
   font-size: 2em;
+  height: fit-content;
+  width: 300px;
 }
 .color2 {
   border: 1px solid indigo;
