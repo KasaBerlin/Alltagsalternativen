@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap|Raleway|family=Yeon+Sung&display=swap");
+@import url("./css/animations.css");
+
+html {
+  border-left: 5px dotted hotpink;
+  margin-left: 20px;
+  padding: 20px 130px 130px 130px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./images/header-img_alltagsalternativen.png"),
+  url("./images/Klecks2.png"), url("./images/structure2.jpg") ;
+  background-repeat: no-repeat;
+  background-blend-mode: color-burn;
+  background-attachment: fixed;
 }

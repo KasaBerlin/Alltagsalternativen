@@ -1,23 +1,46 @@
-import React,{useState,useEffect} from "react";
-
+import React,{useEffect} from "react";
+import "@fortawesome/fontawesome-free/css/all.css";
 const Zwei = () => {
-const [count, setCount] = useState(0);
 
-useEffect(()=>{
-let boxes=document.querySelectorAll(".box")
-for(let i =0; i<boxes.length;i++){
-  boxes[i].style.display="none";
-  boxes[0].style.display="block";
-  boxes[i].addEventListener("click", (e)=>{
-    setCount(+1)
-    boxes[0].remove()
-    // boxes[count].style.display="block";
-console.log(count)
+  useEffect(()=>{
+    let followers=document.querySelectorAll("article.box:nth-of-type(1n+2)")
+  Array.prototype.forEach.call(followers,function(box){
+    box.style.display="none"
   })
-}
 })
+// function removeNote(){
+//   let first=document.querySelector("article.box:first-of-type")
+//   first.style.display="block";
+// let followers=document.querySelectorAll("article.box:nth-of-type(1n+2)")
+// Array.prototype.forEach.call(followers,function(box){
+//   first.addEventListener("click",(e)=>e.target.remove())
+// })}
 
-  return (
+function slide(num){
+// let followers=document.querySelectorAll("article.box:nth-of-type(1n+2)")
+// Array.prototype.forEach.call(followers,function(box){
+// box.style.display="none"
+//   })
+// let first=document.querySelector("article.box:first-of-type")
+// first.style.display="block";
+let slideIndex = 1;
+slideIndex += num;
+
+showDivs(slideIndex);
+
+function showDivs(n) {
+  let i;
+  let x = document.getElementsByClassName("box");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+}
+
+return (
   <React.Fragment>
     <div className="textbox">
       <h2>Zwei geschlechtlichkeit?</h2>
@@ -31,8 +54,8 @@ console.log(count)
       </article>
     </div>
     <div className="textbox3">
+    <i className='far fa-hand-point-left' onClick={() => slide(-1)}/>
       <article className="box sb1">
-        <i className="far fa-hand-point-up"></i>
         "Es gibt doch aber nunmal 2 Geschlechter! Männer und Frauen, die in
         ihrem Wesen verschieden sind!"
       </article>
@@ -143,6 +166,7 @@ console.log(count)
         seien 'natürlich'.. Vielmehr sollten wir darüber nachdenken, welche
         Rolle Sozialisation bei all dem spielt."
       </article>
+    <i className='far fa-hand-point-right' onClick={() => slide(+1)}/>
     </div>
   </React.Fragment>
 )};

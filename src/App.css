@@ -1,31 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap|Raleway|family=Yeon+Sung&display=swap");
-* {
-  border: 0;
-  margin: 0;
-}
-html {
-  border-left: 5px dotted hotpink;
-  margin-left: 20px;
-height: 100vh;
-}
-body {
-  margin: 0 auto;
-  padding: 130px;
-  font-family: Georgia;
-  background-image: url("./images/header-img_alltagsalternativen.png"),
-  url("./images/Klecks2.png"), url("./images/structure2.jpg") ;
-  background-repeat: no-repeat;
-  background-position: left top, center right, center center;
-  background-attachment: fixed;
-}
-.body {
-  display: flex;
-  flex-direction: column;
-}
-.logo {
-  display: flex;
-  justify-content: center;
-}
 h1 {
   font-family: Cabin sketch;
   font-style: italic;
@@ -36,7 +8,6 @@ h1 {
 nav ul {
   border-right: 5px dotted #e2098e;
   list-style-type: none;
-  padding: 2%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -128,6 +99,7 @@ p {
 .panel p {
   padding: 18px;
   border-left: 1px dotted #e2098e;
+  text-align:center;
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
@@ -145,17 +117,13 @@ p {
 }
 .box {
   font-family: "Amatic SC", cursive;
-  margin: 50px auto;
   border: 1px solid #af24a9;
-  padding: 20px;
+  padding: 10%;
   text-align: center;
   font-weight: 900;
   color: slateblue;
-  position: absolute;
   background-color: wheat;
   font-size: 2em;
-  height: fit-content;
-  width: 300px;
 }
 .color2 {
   border: 1px solid indigo;
@@ -202,4 +170,36 @@ footer a {
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
+}
+#slider i{
+  font-size:3em;
+color: #e2098e;
+position:sticky;
+left:100%;
+top:0;
+line-height:3em;
+}
+#slider i::after{
+  content:" Click !   ";
+  font-family: "Amatic SC", cursive;
+  text-shadow: 1px 1px #e2098e;
+}
+.sidenav{
+
+}
+.textbox3{
+  position:relative;
+}
+.fa-hand-point-left, .fa-hand-point-right{
+  position:absolute;
+  top:40%;
+  font-size:2em;
+  color: #e2098e;
+ 
+}
+.fa-hand-point-right{
+  right:3%;
+}
+.fa-hand-point-left{
+left:3%;
 }

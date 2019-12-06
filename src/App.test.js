@@ -8,7 +8,6 @@
 //   ReactDOM.unmountComponentAtNode(div);
 // });
 
-
 const navLinks=[
   {path:"Hallo",comp:"App"},
   {path:"Was ist Sexismus?", comp:"Was"},
