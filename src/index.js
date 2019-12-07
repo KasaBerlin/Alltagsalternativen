@@ -35,8 +35,10 @@ const routing =()=>{
   <HashRouter>
     <Header navLinks={navLinks}/>
     <Switch>
+      <section className="main">
 {getLinks()}
       <Redirect to="/Hallo" />
+      </section>
     </Switch>
     <Footer/>
   </HashRouter>

@@ -2,13 +2,15 @@ import React from "react";
 
 const Selbstverteiler = () => (
   <div className="textbox">
-    <h2>Über uns</h2>
+    <h2>FÜR SELBSTVERTEILER_INNEN</h2>
     <article className="text">
-      Wir haben uns zu dritt zusammengefunden, da wir keine Lust auf sexistische
-      Sprüche haben. Wir haben uns passende Antworten ausgedacht und möchten
-      diese mit euch teilen. Hier könnt Ihr euch über Sexismus informieren und
-      euch Sprüchekärtchen runterladen!
-      <p>Viel Freude dabei!</p>
+    Helft uns schlagkräftige Antworten auf sexistische Sprüche zu verbreiten!
+    Druckt Euch unsere Karten aus und verteilt sie in Eurem Lieblingsclub oder -bar, damit es auch dort gemütlich bleiben kann!
+    <br></br>Downloaden könnt Ihr hier (Format 7x9,34cm):
+    <p className="center"><a href="https://www.dropbox.com/sh/8c6zjo3ls083uji/oEB-KPbAUc">click!</a></p>
+    {/* <br></br>Und hier könnt ihr euch durchlesen, was an den einzelnen Sprüchen problematisch ist: Klickt einfach rechts unter dem Logo -------------------->
+    auf: ".. und was ist daran jetzt sexistisch?"
+      <p className="bold">".. und was ist daran jetzt sexistisch?"</p> */}
     </article>
   </div>
 );

@@ -1,42 +1,38 @@
-import React,{useEffect} from "react";
-import "@fortawesome/fontawesome-free/css/all.css";
+import React,{useEffect,useState} from "react";
+import $ from "jquery";
+
 const Zwei = () => {
-
-  useEffect(()=>{
-    let followers=document.querySelectorAll("article.box:nth-of-type(1n+2)")
-  Array.prototype.forEach.call(followers,function(box){
-    box.style.display="none"
-  })
+const [slideIndex, setIndex] = useState(1);
+  
+useEffect(()=>{
+    $(".box").css("display","none")
+    $(".box:first-of-type").css("display","block")
+    slide()
 })
-// function removeNote(){
-//   let first=document.querySelector("article.box:first-of-type")
-//   first.style.display="block";
-// let followers=document.querySelectorAll("article.box:nth-of-type(1n+2)")
-// Array.prototype.forEach.call(followers,function(box){
-//   first.addEventListener("click",(e)=>e.target.remove())
-// })}
 
-function slide(num){
-// let followers=document.querySelectorAll("article.box:nth-of-type(1n+2)")
-// Array.prototype.forEach.call(followers,function(box){
-// box.style.display="none"
-//   })
-// let first=document.querySelector("article.box:first-of-type")
-// first.style.display="block";
-let slideIndex = 1;
-slideIndex += num;
 
-showDivs(slideIndex);
+function slide(){
 
-function showDivs(n) {
-  let i;
-  let x = document.getElementsByClassName("box");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  showDivs(slideIndex);
+  
+  function showDivs(n) {
+    let x = $(".box");
+    let i;
+    if (n > x.length) {setIndex(1)} //Stop festlegen nach letzter Notiz
+    if (n < 1) {setIndex(x.length)}
+    for (i = 0; i < x.length; i++) {
+      if(slideIndex === -1){
+        if(x.eq(i).hasClass("slide-in-right"))
+        {x[i].classList.replace("slide-in-right","slide-in-left")}
+        else x.eq(i).addClass("slide-in-right")}
+      else if (slideIndex === 1){
+        if(x.eq(i).hasClass("slide-in-left"))
+        {x[i].classList.replace("slide-in-left","slide-in-right")}
+        else x.eq(i).addClass("slide-in-left")
+      } 
+      x.eq(i).css("display", "none")
   }
-  x[slideIndex-1].style.display = "block";  
+  x.eq(slideIndex-1).css("display","block") 
 }
 }
 
@@ -50,11 +46,12 @@ return (
         "natürlicherweise" zwei Geschlechter gäbe, ist in unserer Gesellschaft
         so verwurzelt, dass Menschen immer wieder gerne, fast ein bisschen
         verzweifelt, behaupten: "Es gibt doch aber nunmal zwei Geschlechter!"
-        <p>Ein Gespräch.</p>
+        <p>Ein Gespräch...</p>
       </article>
     </div>
+    <div id="clickBox">
+    <i className="fas fa-arrow-circle-left" onClick={() => setIndex(slideIndex-1)}/>
     <div className="textbox3">
-    <i className='far fa-hand-point-left' onClick={() => slide(-1)}/>
       <article className="box sb1">
         "Es gibt doch aber nunmal 2 Geschlechter! Männer und Frauen, die in
         ihrem Wesen verschieden sind!"
@@ -166,9 +163,10 @@ return (
         seien 'natürlich'.. Vielmehr sollten wir darüber nachdenken, welche
         Rolle Sozialisation bei all dem spielt."
       </article>
-    <i className='far fa-hand-point-right' onClick={() => slide(+1)}/>
     </div>
-  </React.Fragment>
+    <i className="fas fa-arrow-circle-right" onClick={() => setIndex(slideIndex+1)}/>
+    </div>
+    </React.Fragment>
 )};
 
 export default Zwei;

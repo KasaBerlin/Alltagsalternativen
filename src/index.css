@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap|Raleway|family=Yeon+Sung&display=swap");
 @import url("./css/animations.css");
+@import url("./css/header.css");
+@import url("./css/notes.css");
+@import url("./css/blog.css");
+@import url("./css/ifaqs.css");
 
 html {
   border-left: 5px dotted hotpink;
@@ -8,7 +12,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: Georgia, 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,3 +22,17 @@ body {
   background-blend-mode: color-burn;
   background-attachment: fixed;
 }
+section{
+  position:relative;
+  height:90%;
+  }
+section::before{
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    top: 0;
+    /* right: 50%; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }

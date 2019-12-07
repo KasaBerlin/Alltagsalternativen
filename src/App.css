@@ -1,38 +1,14 @@
-h1 {
-  font-family: Cabin sketch;
-  font-style: italic;
-  font-size: 9vw;
-  text-shadow: 3px 3px #e2098e;
-  color: linen;
+
+
+.bold{
+  font-weight:bolder;
 }
-nav ul {
-  border-right: 5px dotted #e2098e;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-li {
-  padding: 14px 16px;
-}
-li a {
-  text-decoration-line: none;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding: 10px;
-  font-size: 1.9em;
-  font-family: "Amatic SC", cursive;
-  text-shadow: 1px 1px #e2098e;
-}
-li a:hover:not(.active) {
-  border: 1px solid #e2098e;
-  color: #af24a9;
+.center{
+  text-align:center;
 }
 .textbox,
 .textbox2 {
+  border-bottom: 1px solid #e2098e;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -79,78 +55,8 @@ h2 {
   padding: 5%;
   text-align: center;
 }
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion,
-p {
-  background-color: transparent;
-  color: #444;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  border: none;
-  transition: 0.4s;
-}
-.accordion {
-  padding: 18px;
-}
-.accordion i{
-  color:#af24a9;
-}
-.panel p {
-  padding: 18px;
-  border-left: 1px dotted #e2098e;
-  text-align:center;
-}
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  border: 1px solid #af24a9;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  display: none;
-}
-.textbox3{
-  overflow:hidden;
-}
-.box {
-  font-family: "Amatic SC", cursive;
-  border: 1px solid #af24a9;
-  padding: 10%;
-  text-align: center;
-  font-weight: 900;
-  color: slateblue;
-  background-color: wheat;
-  font-size: 2em;
-}
 .color2 {
   border: 1px solid indigo;
-}
-.sb1:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 10px solid #af24a9;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #af24a9;
-  border-bottom: 10px solid transparent;
-  right: -20px;
-  top: 6px;
-}
-.sb2:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-right: 10px solid indigo;
-  border-left: 10px solid transparent;
-  border-top: 10px solid indigo;
-  border-bottom: 10px solid transparent;
-  left: -20px;
-  top: 6px;
 }
 .fa-hand-point-up {
   font-size: 2em;
@@ -158,8 +64,9 @@ p {
   z-index: 1;
 }
 .footerbox {
+  display:block;
   text-align: center;
-  border-top: 1px solid #e2098e;
+
   padding-top: 3%;
   word-spacing: 10px;
   margin-top: auto;
@@ -172,7 +79,7 @@ footer a {
   text-transform: uppercase;
 }
 #slider i{
-  font-size:3em;
+font-size:3em;
 color: #e2098e;
 position:sticky;
 left:100%;
@@ -184,22 +91,23 @@ line-height:3em;
   font-family: "Amatic SC", cursive;
   text-shadow: 1px 1px #e2098e;
 }
-.sidenav{
-
-}
 .textbox3{
-  position:relative;
+  height: 300px;
+  width: auto;
 }
-.fa-hand-point-left, .fa-hand-point-right{
-  position:absolute;
-  top:40%;
+#clickBox{
+  position:relative;
+  height:700px;
+}
+.fa-arrow-circle-left, .fa-arrow-circle-right{
+  position: absolute;
+  top: 20px;
   font-size:2em;
   color: #e2098e;
- 
 }
-.fa-hand-point-right{
-  right:3%;
+.fa-arrow-circle-right{
+  right: -41px;
 }
-.fa-hand-point-left{
-left:3%;
+.fa-arrow-circle-left{
+  left:-41px;
 }

@@ -1,21 +1,16 @@
 import React,{useEffect} from "react";
+import $ from "jquery";
+
 function Ifaqs() {
 
 useEffect(()=>{
-  let acc = document.querySelectorAll(".accordion");
-  let arrows = document.querySelectorAll(".accordion i");
-  
+  $(".panel").hide();
+  let acc = $(".accordion"); 
   for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", e => {
-      e.target.classList.toggle("active");
-      let panel = e.target.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-        arrows[i].classList.replace("fa-angle-double-up", "fa-angle-double-down");
-      } else {
-        panel.style.display = "block";
-        arrows[i].classList.replace("fa-angle-double-down", "fa-angle-double-up");
-      }})
+      $(e.target).next().slideToggle("slow");
+      $(e.target).find("i").toggleClass("fa-angle-double-up", "fa-angle-double-down");
+    })
     }})
 
 return(<React.Fragment>
