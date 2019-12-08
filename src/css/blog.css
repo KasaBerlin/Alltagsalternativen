@@ -1,0 +1,14 @@
+.card{
+    display: inline-flex;
+}
+h3{
+    color: #af24a9;
+    text-align: left;
+    width: 60%;
+    display: flex;
+}
+h5{
+    width: 30%;
+    text-align: right;
+    font-family: "Amatic SC", cursive;
+}

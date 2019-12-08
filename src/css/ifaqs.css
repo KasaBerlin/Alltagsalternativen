@@ -3,7 +3,7 @@
   padding: 18px;
   width: 100%;
 }
-.accordion, p {
+.accordion,p {
   background-color: transparent;
   cursor: pointer;
   border: none;
