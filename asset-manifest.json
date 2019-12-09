@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Alltagsalternativen/static/css/main.a53dadfb.chunk.css",
+    "main.js": "/Alltagsalternativen/static/js/main.3a8ada8d.chunk.js",
+    "main.js.map": "/Alltagsalternativen/static/js/main.3a8ada8d.chunk.js.map",
+    "runtime-main.js": "/Alltagsalternativen/static/js/runtime-main.8cfe36db.js",
+    "runtime-main.js.map": "/Alltagsalternativen/static/js/runtime-main.8cfe36db.js.map",
+    "static/css/2.e2f167b4.chunk.css": "/Alltagsalternativen/static/css/2.e2f167b4.chunk.css",
+    "static/js/2.af046228.chunk.js": "/Alltagsalternativen/static/js/2.af046228.chunk.js",
+    "static/js/2.af046228.chunk.js.map": "/Alltagsalternativen/static/js/2.af046228.chunk.js.map",
+    "index.html": "/Alltagsalternativen/index.html",
+    "precache-manifest.f6514759e4603cc924cec7fa37951791.js": "/Alltagsalternativen/precache-manifest.f6514759e4603cc924cec7fa37951791.js",
+    "service-worker.js": "/Alltagsalternativen/service-worker.js",
+    "static/css/2.e2f167b4.chunk.css.map": "/Alltagsalternativen/static/css/2.e2f167b4.chunk.css.map",
+    "static/css/main.a53dadfb.chunk.css.map": "/Alltagsalternativen/static/css/main.a53dadfb.chunk.css.map",
+    "static/media/index.css": "/Alltagsalternativen/static/media/structure2.95a0ef1f.jpg",
+    "static/media/all.css": "/Alltagsalternativen/static/media/fa-solid-900.c2801fb4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cfe36db.js",
+    "static/css/2.e2f167b4.chunk.css",
+    "static/js/2.af046228.chunk.js",
+    "static/css/main.a53dadfb.chunk.css",
+    "static/js/main.3a8ada8d.chunk.js"
+  ]
+}
