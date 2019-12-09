@@ -12,7 +12,7 @@ const App=()=>(
           sexistische Sprüche haben. Wir haben uns passende Antworten ausgedacht
           und möchten diese mit euch teilen. Hier könnt Ihr euch über Sexismus
           informieren und euch Sprüchekärtchen runterladen!
-          <p>Viel Freude dabei!</p>
+          <p className="lastWords">Viel Freude dabei!</p>
         </article>
       </div>
     </div>

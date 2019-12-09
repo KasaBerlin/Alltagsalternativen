@@ -15,7 +15,7 @@ useEffect(()=>{
 
 return(<React.Fragment>
     <div className="textbox">
-      <h2>GENDER IFAQ‘s (infrequently asked questions)</h2>
+      <h2 id="fitting">GENDER IFAQ‘s (infrequently asked questions)</h2>
       <article className="text">
         Infrequently asked questions - Fragen, die viel zu selten über Gender
         gestellt werden, und die helfen, die Tragweite von Sexismus zu erkennen.

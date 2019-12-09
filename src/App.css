@@ -11,13 +11,22 @@
   width: 100%;
   display:block;
 }
+.lastWords{
+  border:none;
+  box-shadow:none;
+  font-family: "Amatic SC", cursive;
+  padding:0;
+  font-size:2em;
+  margin-bottom:0;
+  color:#af24a9;
+}
 .textbox,
 .textbox2 {
-  border-bottom: 1px solid #e2098e;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items:center;
+  border-bottom: 1px solid #e2098e;
   /* padding: 2%; */
   justify-content: space-evenly;
   width: fit-content;

@@ -54,7 +54,7 @@ const Links = () => (
 </ul>
 
 
-<div className="textbox2">
+<div className="textbox2 disclaimer">
     <h2>Disclaimer</h2>
    <article className="text2"> Und selbstverständlich: Wir halten die Seiten zwar für empfehlenswert, können aber nicht alle ihre Inhalte und schon gar nicht alle Links auf den entsprechenden Seiten checken. Wir übernehmen daher keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber_innen verantwortlich.</article></div>
 </div>
