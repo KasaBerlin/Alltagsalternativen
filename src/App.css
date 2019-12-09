@@ -1,18 +1,23 @@
-
-
 .bold{
   font-weight:bolder;
 }
 .center{
   text-align:center;
 }
+.underline{
+  content:"";
+  border-bottom: 1px dashed #e2098e;
+  padding:8px 0 8px 0;
+  width: 100%;
+  display:block;
+}
 .textbox,
 .textbox2 {
   border-bottom: 1px solid #e2098e;
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-wrap: nowrap;
+  align-items:center;
   /* padding: 2%; */
   justify-content: space-evenly;
   width: fit-content;
@@ -51,11 +56,12 @@
   text-align: center;
 }
 h2 {
+  font-family: 'Bad Script', cursive;
   color: #af24a9;
   text-transform: uppercase;
-  padding: 5%;
+  margin: 5%;
   text-align: center;
-  word-break:break-word;
+  /* word-break:break-word; */
 }
 .color2 {
   border: 1px solid indigo;

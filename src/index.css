@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap|Raleway|family=Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Philosopher|Vidaloka|Amatic+SC|Raleway|family=Yeon+Sung&display=swap");
 @import url("./css/animations.css");
 @import url("./css/header.css");
 @import url("./css/notes.css");
 @import url("./css/blog.css");
 @import url("./css/ifaqs.css");
+@import url("./css/links.css");
 
 html {
   border-left: 5px dotted hotpink;
@@ -31,7 +32,6 @@ section::before{
     position: absolute;
     background: rgba(255, 255, 255, 0.6);
     top: 0;
-    /* right: 50%; */
     width: 100%;
     height: 100%;
     z-index: -1;

@@ -34,12 +34,12 @@ const routing =()=>{
   return(
   <HashRouter>
     <Header navLinks={navLinks}/>
-    <Switch>
       <section className="main">
+    <Switch>
 {getLinks()}
       <Redirect to="/Hallo" />
-      </section>
     </Switch>
+      </section>
     <Footer/>
   </HashRouter>
 )};

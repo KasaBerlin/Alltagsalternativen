@@ -1,14 +1,21 @@
 .card{
-    display: inline-flex;
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+}
+h3,h5{
+    font-family: "Amatic SC", cursive;
+    padding:20px;
+    font-size:1.4em;
+    align-self:center;
+    width: 100%;
 }
 h3{
     color: #af24a9;
     text-align: left;
-    width: 60%;
     display: flex;
+    border-right:1px solid #af24a9;
 }
 h5{
-    width: 30%;
-    text-align: right;
-    font-family: "Amatic SC", cursive;
+    text-align: center;
 }

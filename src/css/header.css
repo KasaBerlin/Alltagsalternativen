@@ -17,12 +17,11 @@ h1 {
   li {
     padding: 14px 16px;
   }
-  li a {
+  #about li a {
     text-decoration-line: none;
     color: white;
     font-weight: bold;
     font-size: 20px;
-    text-transform: uppercase;
     padding: 10px;
     font-size: 1.9em;
     font-family: "Amatic SC", cursive;
