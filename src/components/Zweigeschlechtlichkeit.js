@@ -5,36 +5,30 @@ const Zwei = () => {
 const [slideIndex, setIndex] = useState(1);
   
 useEffect(()=>{
-    $(".box").css("display","none")
-    $(".box:first-of-type").css("display","block")
-    slide()
+    slide(slideIndex)
+    console.log(slideIndex)
 })
 
-
-function slide(){
-
-  showDivs(slideIndex);
-  
-  function showDivs(n) {
-    let x = $(".box");
+function slide(n) {
+    let box = $(".box");
     let i;
-    if (n > x.length) {setIndex(1)} //Stop festlegen nach letzter Notiz
-    if (n < 1) {setIndex(x.length)}
-    for (i = 0; i < x.length; i++) {
+    if (n > box.length) {setIndex(1)} // stop festlegen nach letzter Notiz
+    if (n < 1) {setIndex(box.length)} // skips to last card when n is 0
+    for (i = 0; i < box.length; i++) {
       if(slideIndex === -1){
-        if(x.eq(i).hasClass("slide-in-right"))
-        {x[i].classList.replace("slide-in-right","slide-in-left")}
-        else x.eq(i).addClass("slide-in-right")}
+        if(box.eq(i).hasClass("slide-in-right"))
+        {box[i].classList.replace("slide-in-right","slide-in-left")}
+        else box.eq(i).addClass("slide-in-right")}
       else if (slideIndex === 1){
-        if(x.eq(i).hasClass("slide-in-left"))
-        {x[i].classList.replace("slide-in-left","slide-in-right")}
-        else x.eq(i).addClass("slide-in-left")
+        if(box.eq(i).hasClass("slide-in-left"))
+        {box[i].classList.replace("slide-in-left","slide-in-right")}
+        else box.eq(i).addClass("slide-in-left")
       } 
-      x.eq(i).css("display", "none")
+      box.eq(i).css("display", "none")
   }
-  x.eq(slideIndex-1).css("display","block") 
+  box.eq(slideIndex-1).css("display","block") 
 }
-}
+
 
 return (
   <React.Fragment>
@@ -46,7 +40,7 @@ return (
         "natürlicherweise" zwei Geschlechter gäbe, ist in unserer Gesellschaft
         so verwurzelt, dass Menschen immer wieder gerne, fast ein bisschen
         verzweifelt, behaupten: "Es gibt doch aber nunmal zwei Geschlechter!"
-        <p>Ein Gespräch...</p>
+        <p className="lastWords">Ein Gespräch...</p>
       </article>
     </div>
     <div id="clickBox">
