@@ -29,7 +29,8 @@
   border-bottom: 1px solid #e2098e;
   /* padding: 2%; */
   justify-content: space-evenly;
-  width: fit-content;
+  /* width: fit-content; */
+  width: -webkit-fill-available;
 }
 .textbox2 {
   flex-direction: row-reverse;
@@ -43,7 +44,8 @@
 .text3,
 .text4 {
   font-family: "Raleway", sans-serif;
-  margin-left: auto;
+  margin:0;
+  /* margin-left: auto; */
   font-size: 15px;
   text-align: justify;
   color: #444;
@@ -84,7 +86,6 @@ h2 {
   text-align: center;
   padding-top: 3%;
   word-spacing: 10px;
-
 }
 footer a {
   color: #e2098e;

@@ -39,22 +39,6 @@
 textarea {
     height: 20vw;
 }
-.contact ul li:nth-child(1n + 1) {
-}
-/* .avatar {
-    align-self: center;
-    margin: 0 auto;
-    background-image: url("../images/myAvatar.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 21vw;
-    width: 21vw;
-    border-radius: 50%;
-    border: 3px solid white;
-    text-align: center;
-    margin-bottom: 25px;
-} */
 input::placeholder,
 textarea::placeholder,
 input[value="send"] {

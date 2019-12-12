@@ -2,10 +2,12 @@
     display: flex;
     flex-direction:row;
     width: 100%;
+    border-top: 5px solid #af24a9;
+    border-bottom: 5px solid #af24a9;
 }
 h3,h5{
     font-family: "Amatic SC", cursive;
-    padding:20px;
+    padding:0 20px 0 20px;
     font-size:1.4em;
     align-self:center;
     width: 100%;
@@ -18,4 +20,13 @@ h3{
 }
 h5{
     text-align: center;
+}
+.row p{
+    border:none;
+    box-shadow:none;
+    margin:0;
+    color: #333;
+    font-family: 'Solway', serif;
+    font-weight: 100;
+    font-size: 1em;
 }

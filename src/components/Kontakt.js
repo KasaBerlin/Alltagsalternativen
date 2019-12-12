@@ -19,7 +19,7 @@ const Kontakt=()=> (
                   name="name"
                   placeholder="name"
                   size="15"
-                  maxlength="30"
+                  maxLength="30"
                   required
                 ></input>
               </li>
@@ -29,7 +29,7 @@ const Kontakt=()=> (
                   name="email"
                   placeholder="e-mail"
                   size="15"
-                  maxlength="30"
+                  maxLength="30"
                   required
                 ></input>
               </li>

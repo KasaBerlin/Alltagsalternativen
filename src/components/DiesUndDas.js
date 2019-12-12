@@ -3,7 +3,7 @@ import React from "react";
 const DiesUndDas = () => (
 <React.Fragment>
 <div className="header">
-  {/* <h2>DIES UND DAS</h2> */}
+  <h2 id="specialh2">DIES UND DAS</h2>
 </div>
 <div className="row">
   <div className="leftcolumn">
