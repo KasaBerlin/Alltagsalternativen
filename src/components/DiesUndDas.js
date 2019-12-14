@@ -6,7 +6,7 @@ const DiesUndDas = () => (
   <h2 id="specialh2">DIES UND DAS</h2>
 </div>
 <div className="row">
-  <div className="leftcolumn">
+
     <div className="card">
       <h3>A Guide to Bodies and Sexuality for Partners of Trans People</h3>
       <h5>17 | Jan</h5>
@@ -24,12 +24,12 @@ Herrschende Zustände im Alltag herausfordern! CisSexistische Vorannahmen hinter
       <p>[könnte triggern]<br></br><br></br>
 Ein kleines Statement.
 Eigentlich hören wir es jeden Tag irgendwo:
-Fick die Polizei. Fick die Uni. Fuck them.
+Fick dich. Fick die Uni. Fuck them.
 Dabei reproduziert dieser Spruch ziemlich viel Scheiße!
 Der Spruch setzt „ficken“ gleich mit Macht, Gewaltausüben und Dominieren und behauptet, dass „gefickt werden“ gleichbedeutend mit Unterworfenwerden sei - auf diese Art und Weise trägt der Spruch ordentlich zu einer sexistischen und homophoben Grundstimmung in unserer heter@normativen Gesellschaft bei und verharmlost ganz nebenbei noch sexualisierte Gewalt.
 Emanzipatorische Sprache ist anders!</p>
-  </div>
-  <div className="rightcolumn">
+
+
     <div className="card">
       <h3>Eingreifen bei Street Harassment!</h3>
       {/* <div className="fakeimg">Image</div> */}
@@ -50,7 +50,7 @@ Emanzipatorische Sprache ist anders!</p>
       <p>Some text..</p>
     </div> */}
   </div>
-</div>
+
 </React.Fragment>
 );
 

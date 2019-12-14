@@ -27,9 +27,7 @@
   flex-wrap: nowrap;
   align-items:center;
   border-bottom: 1px solid #e2098e;
-  /* padding: 2%; */
   justify-content: space-evenly;
-  /* width: fit-content; */
   width: -webkit-fill-available;
 }
 .textbox2 {
@@ -43,9 +41,8 @@
 .text2,
 .text3,
 .text4 {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   margin:0;
-  /* margin-left: auto; */
   font-size: 15px;
   text-align: justify;
   color: #444;
@@ -72,27 +69,28 @@ h2 {
   text-transform: uppercase;
   margin: 5%;
   text-align: center;
-  /* word-break:break-word; */
 }
 .color2 {
   border: 1px solid indigo;
 }
-.fa-hand-point-up {
-  font-size: 2em;
-  padding-right: 15px;
-  z-index: 1;
-}
 .footerbox {
-  text-align: center;
   padding-top: 3%;
   word-spacing: 10px;
+  line-height: 2.2em;
+  display:block;
 }
-footer a {
+footer *{
   color: #e2098e;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
+}
+footer *:last-child{
+ padding-left: 10px;
+ float:right;
+font-size: 1.5em;
+color:#af24a9;
 }
 #slider i{
 font-size:3em;

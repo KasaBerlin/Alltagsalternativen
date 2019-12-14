@@ -4,6 +4,8 @@
     color: linen;
     padding: 10px;
     margin:0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1em;
 }
 .linkbox ul li{
     list-style:circle;

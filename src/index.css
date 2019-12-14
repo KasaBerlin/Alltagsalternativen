@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bad+Script|Solway|Philosopher|Vidaloka|Amatic+SC|Raleway|family=Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Bad+Script|Solway|Amatic+SC|Raleway|family=Yeon+Sung&display=swap");
 @import url("./css/animations.css");
 @import url("./css/header.css");
 @import url("./css/notes.css");
@@ -15,7 +15,7 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Solway', serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-repeat: no-repeat;

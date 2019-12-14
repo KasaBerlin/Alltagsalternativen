@@ -14,7 +14,9 @@ import Selbstverteiler from "./components/Selbstverteiler";
 import DiesUndDas from "./components/DiesUndDas";
 import Links from "./components/Links";
 import Kontakt from "./components/Kontakt";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import Impressum from "../src/components/Impressum";
+import Datenschutz from "../src/components/Datenschutzerklärung"
 
 import "@fortawesome/fontawesome-free/css/all.css";
 
@@ -27,7 +29,10 @@ const routing =()=>{
     {path:"Für Selbstverteiler_Innen",comp:Selbstverteiler},
     {path:"Dies Und Das",comp:DiesUndDas},
     {path:"Links",comp:Links},
-    {path:"Kontakt", comp:Kontakt} ]
+    {path:"Kontakt", comp:Kontakt},
+  {path:"Impressum", comp:Impressum},
+  {path:"Datenschutz", comp:Datenschutz}
+ ]
   
   const getLinks=()=>navLinks.map(({path,comp},i)=><Route key={i} exact path={"/"+path} component={withRouter(comp)} />)
 

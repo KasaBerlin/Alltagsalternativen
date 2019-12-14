@@ -3,10 +3,11 @@ import React from "react";
 
 const Kontakt=()=> (
       <React.Fragment>
+        <h2 id="specialh2">KONTAKT</h2>
         <section className="contact puff-in-center" id="contact">
             <div className="textbox2">
             <h2 className="emailclick">Schreibt uns!</h2>
-            <article className="text2">Wir sind immer offen für neue Ideen und Anregungen für zukünftige Projecte.</article>
+            <article className="text2">Wir sind immer offen für neue Ideen und Anregungen für zukünftige Projekte.</article>
             </div>
           <form
             action="https://formspree.io/katrinsalac@gmail.com"

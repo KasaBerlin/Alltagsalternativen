@@ -12,11 +12,6 @@ useEffect(()=>{
   arrow.classList.toggle("fa-caret-right")
 })
 
-// function toggleNav(){
-//   if(!hidden){  
-//     arrow.classList.replace("fa-caret-right","fa-caret-left")}
-// }
-
 const getLinks=()=>navLinks.map(({path},i)=><li key={i}><Link replace={path === currentPath} to={"/"+path}>{path}</Link></li>)
 
 return(
