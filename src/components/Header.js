@@ -12,7 +12,7 @@ useEffect(()=>{
   arrow.classList.toggle("fa-caret-right")
 })
 
-const getLinks=()=>navLinks.map(({path},i)=><li key={i}><Link replace={path === currentPath} to={"/"+path}>{path}</Link></li>)
+const getLinks=()=>navLinks.map(({path},i)=>i<8?<li key={i}><Link replace={path === currentPath} to={"/"+path}>{path}</Link></li>:null)
 
 return(
   <header>
