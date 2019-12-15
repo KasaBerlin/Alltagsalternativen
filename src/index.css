@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Bad+Script|Solway|Amatic+SC|Raleway|family=Yeon+Sung&display=swap");
 @import url("./css/animations.css");
 @import url("./css/header.css");
-@import url("./css/notes.css");
 @import url("./css/blog.css");
 @import url("./css/ifaqs.css");
 @import url("./css/links.css");
 @import url("./css/kontakt.css");
+@import url("./css/modal.css");
 
 html {
   border-left: 5px dotted hotpink;
@@ -30,7 +30,7 @@ body {
 section{
   position:relative;
   height:90%;
-  }
+}
 section::before{
     content: "";
     position: absolute;

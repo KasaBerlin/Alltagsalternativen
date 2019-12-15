@@ -1,32 +1,25 @@
-.contact {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    font-family: "Quicksand", sans-serif;
-  }
-  .contact .text2{
+.contact .text2{
       text-align:center;
-  }
-  .contact ul{
-      list-style:none;
-      margin:0;
-      padding:0;
-  }
-  .contact ul li{
-      padding:0;
-      margin: 5px 0 5px 0;
-  }
-  form {
+}
+form {
     margin: 0 auto;
     padding: 20px;
     width: -webkit-fill-available;
-  }
-  input,
-  textarea {
     background-color: transparent;
-    cursor: pointer;
-    border: none;
+}
+form ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+form ul li{
+    padding:0;
+    margin: 5px 0 5px 0;
+}
+input,
+textarea {
     font-family: "Amatic SC", cursive;
+    cursor: pointer;
     color: slateblue;
     border: 1px solid #af24a9;
     padding: 20px;
@@ -49,5 +42,6 @@ input[value="send"] {
     width: fit-content;
 }
 input[value="send"]:hover {
-    transition: color 1s;
+    background: #e2098e;
+    color:whitesmoke;
 }

@@ -59,37 +59,6 @@
       opacity: 0;
     }
   }
-  
-/* notes */
-
-.slide-out-right {
-	-webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-          animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-@-webkit-keyframes slide-out-right {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-    opacity: 0;
-  }
-}
-@keyframes slide-out-right {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-    opacity: 0;
-  }
-}
 
 .slide-in-left {
 	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -146,5 +115,55 @@
     -webkit-transform: translateX(-1000px);
             transform: translateX(-1000px);
     opacity: 0;
+  }
+}
+
+.flip-vertical-right {
+	-webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(3.142rad);
+            transform: rotateY(3.142rad);
+  }
+}
+@keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(3.142rad);
+            transform: rotateY(3.142rad);
+  }
+}
+.flip-vertical-left{
+	-webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes flip-vertical-left {
+  0% {
+    -webkit-transform: rotateY(3.142rad);
+            transform: rotateY(3.142rad);
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+@keyframes flip-vertical-left {
+  0% {
+    -webkit-transform: rotateY(3.142rad);
+            transform: rotateY(3.142rad);
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
   }
 }

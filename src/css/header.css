@@ -29,18 +29,20 @@ h1:after {
  border-top: 3px dashed #e2098e;
  border-bottom:3px dashed #e2098e;
 }
-  nav ul {
+.main-nav{
+  padding: 20px 0 20px 0;
+}
+.main-nav ul {
     border-right: 5px dashed #e2098e;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: flex-end;
   }
-  li {
+  .main-nav li {
     padding: 14px 16px;
   }
-  #about li a {
+  .main-nav a {
     text-decoration-line: none;
     color: white;
     font-weight: bold;
@@ -54,3 +56,16 @@ h1:after {
     border: 1px solid #e2098e;
     color: #af24a9;
   }
+#slider i{
+    font-size:3em;
+    color: #e2098e;
+    position:sticky;
+    left:100%;
+    top:0;
+    margin-top:20px;
+    }
+#slider i::after{
+      content:" Click !   ";
+      font-family: "Amatic SC", cursive;
+      text-shadow: 1px 1px #e2098e;
+    }

@@ -3,10 +3,9 @@
   padding: 18px;
   width: 100%;
 }
-.accordion,p {
+.accordion,.panel,.linkstyle{
   background-color: transparent;
   cursor: pointer;
-  border: none;
   font-family: "Amatic SC", cursive;
   border: 1px solid #af24a9;
   padding:20px;
@@ -15,6 +14,9 @@
   font-size: 1.5em;
   box-shadow: -2px 2px 2px rgba(0,0,0,0.3);
   text-align:justify;
+}
+.panel{
+  color: #333;
 }
 .accordion i{
   color:#af24a9;

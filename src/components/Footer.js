@@ -6,9 +6,7 @@ const Footer = () => (
     <footer>
       <Link to="/Impressum">Impressum + </Link>
       <Link to="/Datenschutz">Datenschutz</Link >
-      {/* <Link to="/Cookies">Cookie-Richtlinien + </Link > */}
-      {/* <Link to="/Sitemap">Sitemap</Link > */}
-      <a href="https://www.facebook.com/Alltagsalternativen/"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.facebook.com/Alltagsalternativen/"><i className="fab fa-facebook"></i></a>
     </footer>
   </div>)
 ;

@@ -1,29 +1,25 @@
-import React,{useEffect, useState} from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 const Header = ({navLinks,currentPath}) => {
-  const [hidden, setHide] = useState(false);
+const [hidden,isHidden]=useState(false)
 
-useEffect(()=>{
-  let arrow=document.querySelector("#arrow");
-  let nav=document.querySelector("nav");
-  nav.toggleAttribute("hidden")
-  nav.classList.replace("slide-out-right","slide-in-right")
-  arrow.classList.toggle("fa-caret-right")
-})
+function setHide(){
+  isHidden(!hidden)
+  $("nav").toggle();
+}
 
 const getLinks=()=>navLinks.map(({path},i)=>i<8?<li key={i}><Link replace={path === currentPath} to={"/"+path}>{path}</Link></li>:null)
 
 return(
   <header>
-    <div id="slider" onClick={() =>setHide(!hidden)}><i id="arrow" className="fas fa-caret-left"></i></div>
-    <div id="mySidenav"  className="sidenav">
-      <nav className="slide-out-right">
-        <ul id="about">
+    <div id="slider" onClick={() =>setHide()}><i id="arrow" className={hidden ? 'fas fa-caret-left flip-vertical-left':'fas fa-caret-left flip-vertical-right'}></i></div>
+      <nav className='slide-in-right main-nav'>
+        <ul>
         {getLinks()}
         </ul>
       </nav>
-    </div>
     <div className="logo">
       <h1>alltagsalternativen</h1>
     </div>

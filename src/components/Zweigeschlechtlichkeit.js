@@ -5,15 +5,14 @@ const Zwei = () => {
 const [slideIndex, setIndex] = useState(1);
   
 useEffect(()=>{
-    slide(slideIndex)
-    console.log(slideIndex)
+    slide()
 })
 
-function slide(n) {
+function slide() {
     let box = $(".box");
     let i;
-    if (n > box.length) {setIndex(1)} // stop festlegen nach letzter Notiz
-    if (n < 1) {setIndex(box.length)} // skips to last card when n is 0
+    // if (n > box.length) {setIndex(1)} // stop festlegen nach letzter Notiz
+    // if (n < 1) {setIndex(box.length)} // skips to last card when n is 0
     for (i = 0; i < box.length; i++) {
       if(slideIndex === -1){
         if(box.eq(i).hasClass("slide-in-right"))
@@ -29,6 +28,21 @@ function slide(n) {
   box.eq(slideIndex-1).css("display","block") 
 }
 
+function showModal(){
+let modal = $("#myModal");
+modal.css("display","block");
+
+let close = $(".close");
+close.click( ()=>{
+  modal.css("display","none");
+})
+
+$("window").click(e=>{
+  if (e.target === modal) {
+    modal.css("display","none")
+  }
+})
+}
 
 return (
   <React.Fragment>
@@ -40,12 +54,16 @@ return (
         "natürlicherweise" zwei Geschlechter gäbe, ist in unserer Gesellschaft
         so verwurzelt, dass Menschen immer wieder gerne, fast ein bisschen
         verzweifelt, behaupten: "Es gibt doch aber nunmal zwei Geschlechter!"
-        <p className="lastWords">Ein Gespräch...</p>
+        <p className="linkstyle" onClick={() => showModal()}>Ein Gespräch...!</p>
       </article>
     </div>
-    <div id="clickBox">
-    <i className="fas fa-arrow-circle-left" onClick={() => setIndex(slideIndex-1)}/>
-    <div className="textbox3">
+    <div id="myModal" className="modal">
+        <nav className="modal-nav">
+    <i class="close fas fa-times-circle"></i>
+    <i className="fas fa-arrow-circle-left left" onClick={() => setIndex(slideIndex-1)}/>
+    <i className="fas fa-arrow-circle-right right" onClick={() => setIndex(slideIndex+1)}/>
+    </nav>
+      <div id="clickBox" className="modal-content">
       <article className="box sb1">
         "Es gibt doch aber nunmal 2 Geschlechter! Männer und Frauen, die in
         ihrem Wesen verschieden sind!"
@@ -158,7 +176,6 @@ return (
         Rolle Sozialisation bei all dem spielt."
       </article>
     </div>
-    <i className="fas fa-arrow-circle-right" onClick={() => setIndex(slideIndex+1)}/>
     </div>
     </React.Fragment>
 )};

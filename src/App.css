@@ -1,5 +1,8 @@
-.bold{
-  font-weight:bolder;
+.linkstyle{
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
+  text-align:center;
 }
 .center{
   text-align:center;
@@ -18,6 +21,15 @@ h2 {
   margin: 5%;
   text-align: center;
 }
+#specialh2{
+  border:none;
+  background-color:#af24a9;
+  color: linen;
+  padding: 10px;
+  margin:0;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1em;
+}
 .textbox,
 .textbox2 {
   display: flex;
@@ -31,15 +43,8 @@ h2 {
 .textbox2 {
   flex-direction: row-reverse;
 }
-.textbox3 {
-  display: block;
-  padding: 2%;
-}
 .text,
-.text2,
-.text3,
-.text4 {
-  /* font-family: "Raleway", sans-serif; */
+.text2 {
   margin:0;
   font-size: 15px;
   text-align: justify;
@@ -53,14 +58,6 @@ h2 {
   border-right: 1px solid #e2098e;
   padding: 5%;
 }
-.text3 {
-  text-align: center;
-  padding: 5px;
-}
-.text4 {
-  color: #e2098e;
-  text-align: center;
-}
 .lastWords{
   border:none;
   box-shadow:none;
@@ -69,6 +66,7 @@ h2 {
   font-size:2em;
   margin-bottom:0;
   color:#af24a9;
+  font-weight: bolder;
 }
 .footerbox {
   padding-top: 3%;
@@ -89,41 +87,8 @@ footer *:last-child{
 font-size: 1.5em;
 color:#af24a9;
 }
-#slider i{
-font-size:3em;
-color: #e2098e;
-position:sticky;
-left:100%;
-top:0;
-line-height:3em;
-}
-#slider i::after{
-  content:" Click !   ";
-  font-family: "Amatic SC", cursive;
-  text-shadow: 1px 1px #e2098e;
-}
-.textbox3{
-  height: 300px;
-  width: auto;
-}
-#clickBox{
-  position:relative;
-  height:700px;
-}
-.fa-arrow-circle-left, .fa-arrow-circle-right{
-  position: absolute;
-  top: 20px;
-  font-size:2em;
-  color: #e2098e;
-}
-.fa-arrow-circle-right{
-  right: -41px;
-}
-.fa-arrow-circle-left{
-  left:-41px;
-}
 #Datenschutz{
-  font-family:Solway;
+  font-family: 'Solway', serif;
   font-size: 1em;
   color: #333;
   font-weight: 100;
