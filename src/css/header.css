@@ -16,8 +16,8 @@ h1:before {
  bottom:5px;
  left:0;
  right:0;
- border-top: 3px dashed #e2098e;
- border-bottom:3px dashed #e2098e;
+ border-top: 3px dashed #af24a9;
+ border-bottom:3px dashed #af24a9;
 }
 h1:after {
  content:"";

@@ -11,14 +11,12 @@
   width: 100%;
   display:block;
 }
-.lastWords{
-  border:none;
-  box-shadow:none;
-  font-family: "Amatic SC", cursive;
-  padding:0;
-  font-size:2em;
-  margin-bottom:0;
-  color:#af24a9;
+h2 {
+  font-family: 'Bad Script', cursive;
+  color: #af24a9;
+  text-transform: uppercase;
+  margin: 5%;
+  text-align: center;
 }
 .textbox,
 .textbox2 {
@@ -63,15 +61,14 @@
   color: #e2098e;
   text-align: center;
 }
-h2 {
-  font-family: 'Bad Script', cursive;
-  color: #af24a9;
-  text-transform: uppercase;
-  margin: 5%;
-  text-align: center;
-}
-.color2 {
-  border: 1px solid indigo;
+.lastWords{
+  border:none;
+  box-shadow:none;
+  font-family: "Amatic SC", cursive;
+  padding:0;
+  font-size:2em;
+  margin-bottom:0;
+  color:#af24a9;
 }
 .footerbox {
   padding-top: 3%;
