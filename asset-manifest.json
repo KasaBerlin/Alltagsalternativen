@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Alltagsalternativen/static/css/main.c3e4189a.chunk.css",
-    "main.js": "/Alltagsalternativen/static/js/main.6bdd115c.chunk.js",
-    "main.js.map": "/Alltagsalternativen/static/js/main.6bdd115c.chunk.js.map",
+    "main.css": "/Alltagsalternativen/static/css/main.c4c61371.chunk.css",
+    "main.js": "/Alltagsalternativen/static/js/main.17d93847.chunk.js",
+    "main.js.map": "/Alltagsalternativen/static/js/main.17d93847.chunk.js.map",
     "runtime-main.js": "/Alltagsalternativen/static/js/runtime-main.88bd2230.js",
     "runtime-main.js.map": "/Alltagsalternativen/static/js/runtime-main.88bd2230.js.map",
     "static/css/2.e2f167b4.chunk.css": "/Alltagsalternativen/static/css/2.e2f167b4.chunk.css",
-    "static/js/2.91c7b2fc.chunk.js": "/Alltagsalternativen/static/js/2.91c7b2fc.chunk.js",
-    "static/js/2.91c7b2fc.chunk.js.map": "/Alltagsalternativen/static/js/2.91c7b2fc.chunk.js.map",
+    "static/js/2.d43959c2.chunk.js": "/Alltagsalternativen/static/js/2.d43959c2.chunk.js",
+    "static/js/2.d43959c2.chunk.js.map": "/Alltagsalternativen/static/js/2.d43959c2.chunk.js.map",
     "index.html": "/Alltagsalternativen/index.html",
-    "precache-manifest.4dde2b183ae9db0625df1e393a762381.js": "/Alltagsalternativen/precache-manifest.4dde2b183ae9db0625df1e393a762381.js",
+    "precache-manifest.c47659a8a4c15c59df0180eb2a074683.js": "/Alltagsalternativen/precache-manifest.c47659a8a4c15c59df0180eb2a074683.js",
     "service-worker.js": "/Alltagsalternativen/service-worker.js",
     "static/css/2.e2f167b4.chunk.css.map": "/Alltagsalternativen/static/css/2.e2f167b4.chunk.css.map",
-    "static/css/main.c3e4189a.chunk.css.map": "/Alltagsalternativen/static/css/main.c3e4189a.chunk.css.map",
-    "static/js/2.91c7b2fc.chunk.js.LICENSE": "/Alltagsalternativen/static/js/2.91c7b2fc.chunk.js.LICENSE",
+    "static/css/main.c4c61371.chunk.css.map": "/Alltagsalternativen/static/css/main.c4c61371.chunk.css.map",
+    "static/js/2.d43959c2.chunk.js.LICENSE": "/Alltagsalternativen/static/js/2.d43959c2.chunk.js.LICENSE",
     "static/media/index.css": "/Alltagsalternativen/static/media/structure2.95a0ef1f.jpg",
     "static/media/all.css": "/Alltagsalternativen/static/media/fa-solid-900.c2801fb4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.88bd2230.js",
     "static/css/2.e2f167b4.chunk.css",
-    "static/js/2.91c7b2fc.chunk.js",
-    "static/css/main.c3e4189a.chunk.css",
-    "static/js/main.6bdd115c.chunk.js"
+    "static/js/2.d43959c2.chunk.js",
+    "static/css/main.c4c61371.chunk.css",
+    "static/js/main.17d93847.chunk.js"
   ]
 }
