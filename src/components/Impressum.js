@@ -4,10 +4,10 @@ const Impressum= () => (
     <React.Fragment>
 
 <p><strong>Impressum</strong></p>
-<p>Anbieter:<br />Max Mustermann<br />Musterstraße 1<br />80999 München</p>
-<p>Kontakt:<br />Telefon: auf Anfrage<br />E-Mail: mail@mustermann.de</p>
+<p>Anbieter:<br />Alltagsalternativen e.V.<br />Unter den Linden 1<br />13187 Berlin</p>
+<p>Kontakt:<br />Telefon: auf Anfrage<br />E-Mail: alltagsalternativen.post@gmail.com</p>
 <p>Bei redaktionellen Inhalten:</p>
-<p>Verantwortlich nach § 55 Abs.2 RStV<br />Moritz Schreiberling<br />Musterstraße 2<br />80999 München</p>
+<p>Verantwortlich nach § 55 Abs.2 RStV<br />siehe oben</p>
 <p id="Datenschutz">Streitschlichtung
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 

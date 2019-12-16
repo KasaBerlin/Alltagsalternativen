@@ -5,46 +5,35 @@ const Datenschutzerklärung= () => (
 
 <p><strong>Datenschutzerklärung</strong></p>
 <p id="Datenschutz">Datenschutzerklärung
-Personenbezogene Daten (nachfolgend zumeist nur „Daten“ genannt) werden von uns nur im Rahmen der Erforderlichkeit sowie zum Zwecke der Bereitstellung eines funktionsfähigen und nutzerfreundlichen Internetauftritts, inklusive seiner Inhalte und der dort angebotenen Leistungen, verarbeitet.
+Personenbezogene Daten (nachfolgend zumeist nur „Daten“ genannt) werden von uns nur im Rahmen der Erforderlichkeit sowie zum Zwecke der Bereitstellung eines funktionsfähigen und nutzerfreundlichen Internetauftritts, inklusive seiner Inhalte und der dort angebotenen Leistungen, verarbeitet.<br></br><br></br>
 
-Gemäß Art. 4 Ziffer 1. der Verordnung (EU) 2016/679, also der Datenschutz-Grundverordnung (nachfolgend nur „DSGVO“ genannt), gilt als „Verarbeitung“ jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführter Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten, wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung.
+Gemäß Art. 4 Ziffer 1. der Verordnung (EU) 2016/679, also der Datenschutz-Grundverordnung (nachfolgend nur „DSGVO“ genannt), gilt als „Verarbeitung“ jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführter Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten, wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung.<br></br><br></br>
 
-Mit der nachfolgenden Datenschutzerklärung informieren wir Sie insbesondere über Art, Umfang, Zweck, Dauer und Rechtsgrundlage der Verarbeitung personenbezogener Daten, soweit wir entweder allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung entscheiden. Zudem informieren wir Sie nachfolgend über die von uns zu Optimierungszwecken sowie zur Steigerung der Nutzungsqualität eingesetzten Fremdkomponenten, soweit hierdurch Dritte Daten in wiederum eigener Verantwortung verarbeiten.
+Mit der nachfolgenden Datenschutzerklärung informieren wir Sie insbesondere über Art, Umfang, Zweck, Dauer und Rechtsgrundlage der Verarbeitung personenbezogener Daten, soweit wir entweder allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung entscheiden. Zudem informieren wir Sie nachfolgend über die von uns zu Optimierungszwecken sowie zur Steigerung der Nutzungsqualität eingesetzten Fremdkomponenten, soweit hierdurch Dritte Daten in wiederum eigener Verantwortung verarbeiten.<br></br><br></br>
 
-Unsere Datenschutzerklärung ist wie folgt gegliedert:
+Unsere Datenschutzerklärung ist wie folgt gegliedert:<br></br><br></br>
 
-I. Informationen über uns als Verantwortliche
-II. Rechte der Nutzer und Betroffenen
-III. Informationen zur Datenverarbeitung
+I. Informationen über uns als Verantwortliche<br></br>
+II. Rechte der Nutzer und Betroffenen<br></br>
+III. Informationen zur Datenverarbeitung<br></br>
 
-I. Informationen über uns als Verantwortliche
-Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:
+I. Informationen über uns als Verantwortliche<br></br>
+Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:<br></br><br></br>
 
-Musterfirma/Musterunternehmer
-Musterstraße 1
-12345 Musterstadt
-Deutschland
+rnativen e.V.<br></br>
+Unter den Linden 1<br></br>
+13187 Berlin<br></br>
+Deutschland<br></br><br></br>
 
-Telefon: Telefonnummer
-Telefax: Faxnummer
-E-Mail: muster@mustermail.xy
+Telefon: auf Anfrage<br></br>
+E-Mail: alltagsalternativen.post@gmail.com<br></br><br></br>
 
-Datenschutzbeauftragte/r beim Anbieter ist:
+Datenschutzbeauftragte/r beim Anbieter ist:<br></br><br></br>
 
-Maxie Musterfrau 
+siehe oben<br></br><br></br>
 
-[nachfolgende Angaben sind zu ergänzen, sofern ein Externer Datenschutzbeauftragter bestellt ist]
-
-Musterstraße 1
-12345 Musterstadt
-Deutschland
-
-Telefon: Telefonnummer
-Telefax: Faxnummer
-E-Mail: datenschutz@mustermail.xy
-
-II. Rechte der Nutzer und Betroffenen
-Mit Blick auf die nachfolgend noch näher beschriebene Datenverarbeitung haben die Nutzer und Betroffenen das Recht
+II. Rechte der Nutzer und Betroffenen<br></br>
+Mit Blick auf die nachfolgend noch näher beschriebene Datenverarbeitung haben die Nutzer und Betroffenen das Recht<br></br><br></br>
 
 auf Bestätigung, ob sie betreffende Daten verarbeitet werden, auf Auskunft über die verarbeiteten Daten, auf weitere Informationen über die Datenverarbeitung sowie auf Kopien der Daten (vgl. auch Art. 15 DSGVO);
 auf Berichtigung oder Vervollständigung unrichtiger bzw. unvollständiger Daten (vgl. auch Art. 16 DSGVO);
