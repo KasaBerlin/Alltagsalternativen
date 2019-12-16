@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/Alltagsalternativen/static/css/main.c4c61371.chunk.css",
-    "main.js": "/Alltagsalternativen/static/js/main.17d93847.chunk.js",
-    "main.js.map": "/Alltagsalternativen/static/js/main.17d93847.chunk.js.map",
-    "runtime-main.js": "/Alltagsalternativen/static/js/runtime-main.88bd2230.js",
-    "runtime-main.js.map": "/Alltagsalternativen/static/js/runtime-main.88bd2230.js.map",
+    "main.css": "/Alltagsalternativen/static/css/main.4e38a65e.chunk.css",
+    "main.js": "/Alltagsalternativen/static/js/main.63786153.chunk.js",
+    "main.js.map": "/Alltagsalternativen/static/js/main.63786153.chunk.js.map",
+    "runtime-main.js": "/Alltagsalternativen/static/js/runtime-main.8cfe36db.js",
+    "runtime-main.js.map": "/Alltagsalternativen/static/js/runtime-main.8cfe36db.js.map",
     "static/css/2.e2f167b4.chunk.css": "/Alltagsalternativen/static/css/2.e2f167b4.chunk.css",
-    "static/js/2.d43959c2.chunk.js": "/Alltagsalternativen/static/js/2.d43959c2.chunk.js",
-    "static/js/2.d43959c2.chunk.js.map": "/Alltagsalternativen/static/js/2.d43959c2.chunk.js.map",
+    "static/js/2.856e8d94.chunk.js": "/Alltagsalternativen/static/js/2.856e8d94.chunk.js",
+    "static/js/2.856e8d94.chunk.js.map": "/Alltagsalternativen/static/js/2.856e8d94.chunk.js.map",
     "index.html": "/Alltagsalternativen/index.html",
-    "precache-manifest.c47659a8a4c15c59df0180eb2a074683.js": "/Alltagsalternativen/precache-manifest.c47659a8a4c15c59df0180eb2a074683.js",
+    "precache-manifest.b2556057860c5bb1670bee73d1cf35d5.js": "/Alltagsalternativen/precache-manifest.b2556057860c5bb1670bee73d1cf35d5.js",
     "service-worker.js": "/Alltagsalternativen/service-worker.js",
     "static/css/2.e2f167b4.chunk.css.map": "/Alltagsalternativen/static/css/2.e2f167b4.chunk.css.map",
-    "static/css/main.c4c61371.chunk.css.map": "/Alltagsalternativen/static/css/main.c4c61371.chunk.css.map",
-    "static/js/2.d43959c2.chunk.js.LICENSE": "/Alltagsalternativen/static/js/2.d43959c2.chunk.js.LICENSE",
+    "static/css/main.4e38a65e.chunk.css.map": "/Alltagsalternativen/static/css/main.4e38a65e.chunk.css.map",
     "static/media/index.css": "/Alltagsalternativen/static/media/structure2.95a0ef1f.jpg",
     "static/media/all.css": "/Alltagsalternativen/static/media/fa-solid-900.c2801fb4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.88bd2230.js",
+    "static/js/runtime-main.8cfe36db.js",
     "static/css/2.e2f167b4.chunk.css",
-    "static/js/2.d43959c2.chunk.js",
-    "static/css/main.c4c61371.chunk.css",
-    "static/js/main.17d93847.chunk.js"
+    "static/js/2.856e8d94.chunk.js",
+    "static/css/main.4e38a65e.chunk.css",
+    "static/js/main.63786153.chunk.js"
   ]
 }
