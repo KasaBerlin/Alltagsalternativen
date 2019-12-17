@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fae505e18542c08f3e9354ebbcf6fc75",
+    "revision": "00f08e336eea61c58d45d5aeec6a0938",
     "url": "/Alltagsalternativen/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Alltagsalternativen/static/css/2.e2f167b4.chunk.css"
   },
   {
-    "revision": "898bf7dca8c59fd7b773",
+    "revision": "4fa07f0c00e19aa115a0",
     "url": "/Alltagsalternativen/static/css/main.4e38a65e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Alltagsalternativen/static/js/2.856e8d94.chunk.js"
   },
   {
-    "revision": "898bf7dca8c59fd7b773",
-    "url": "/Alltagsalternativen/static/js/main.63786153.chunk.js"
+    "revision": "4fa07f0c00e19aa115a0",
+    "url": "/Alltagsalternativen/static/js/main.79a92a50.chunk.js"
   },
   {
     "revision": "69ad3ea6b4ed016fe982",
