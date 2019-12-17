@@ -19,8 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-repeat: no-repeat;
-  background-image: url("./images/header-img_alltagsalternativen.png"),
-  url("./images/Klecks2.png"), url("./images/structure2.jpg") ;
+
   background-blend-mode: color-burn;
   background-attachment:fixed;
   /* background-attachment: scroll; */

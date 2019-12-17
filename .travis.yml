@@ -1,0 +1,25 @@
+git: 
+depth: false
+env:
+  global:
+  - HUGO_VERSION="0.54.0"
+  matrix:
+  - YOUR_ENCRYPTED_VARIABLE
+  - secure: WtQxBupzQ9//T0wdxQhsC5R4FWaASnF1zJAlk/NZXSDArXKvUrq3Qg7CJcPgqRnDFhRAS35XTGUBqVrpyD7Lyi5PFGI7e4wQ2GAwYIFpRycXpqY5rBdiMr5lCUg1JKnPZVYUoHvqbvYEKtdQq13npua3eWhFD0x7L233xaUT72GH+jrxcZqIFhbUqVpDSdSzZEf9hRfcg5ZwyK/Tf7FBpAvp8F1bdnAbJaZFcGDmLg30JdWganWiaz771XRzS8n/8TDhtFBn6s0pL4MoYdKiiasQv8GSxrtx3mIt7i6uXDdPSzLefKycgC4L+VQyeK/wf5Al13BHxJRVzAl1876iCn3utc/Wim/M7SIQVptAN0ilbGoHIgFESRVj72ryeMi+5+989VmIh22Yq+7Zspn8QMlxXy10XhJLfpUZEeoRPOv7QXCo64jHT1t9wMqlUjcXQgfNfA/c7Eizz5XXFexP4gi91/xMXpL+a2kEvxioZjqxKfKuENvM9TOZ5JtOo/aUUJmZWEhXrn8oxfTidBS2Wp5QciO0NhLexf8lfDcGlePzSNNFb65tQ/dS82xQVIDWjxVMlosYhLtXL5qAYqWTr/P+qLG3zQoYqwuVxcqFBRzrOJ0DKoIBoiXIp64fGLOsCfNWi38tsLtsTO6n+zQv1OTo+LSP3pbdbII2XRkJ4wg=
+install:
+- wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+- tar xf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+- mv hugo ~/bin/
+script:
+- hugo --gc --minify
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local-dir: public
+  repo: gh-username/gh-username.github.io
+  target-branch: master
+  verbose: true
+  on: 
+  branch: master
