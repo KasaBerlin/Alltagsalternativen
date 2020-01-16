@@ -30,8 +30,8 @@ const routing =()=>{
     {path:"Dies Und Das",comp:DiesUndDas},
     {path:"Links",comp:Links},
     {path:"Kontakt", comp:Kontakt},
-  {path:"Impressum", comp:Impressum},
-  {path:"Datenschutz", comp:Datenschutz}
+    {path:"Impressum", comp:Impressum},
+    {path:"Datenschutz", comp:Datenschutz}
  ]
   
   const getLinks=()=>navLinks.map(({path,comp},i)=><Route key={i} exact path={"/"+path} component={withRouter(comp)} />)

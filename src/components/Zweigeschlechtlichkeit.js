@@ -11,8 +11,6 @@ useEffect(()=>{
 function slide() {
     let box = $(".box");
     let i;
-    // if (n > box.length) {setIndex(1)} // stop festlegen nach letzter Notiz
-    // if (n < 1) {setIndex(box.length)} // skips to last card when n is 0
     for (i = 0; i < box.length; i++) {
       if(slideIndex === -1){
         if(box.eq(i).hasClass("slide-in-right"))
