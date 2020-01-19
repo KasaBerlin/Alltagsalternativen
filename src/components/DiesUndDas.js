@@ -6,7 +6,6 @@ const DiesUndDas = () => (
   <h2 id="specialh2">DIES UND DAS</h2>
 </div>
 <div className="row">
-
     <div className="card">
       <h3>A Guide to Bodies and Sexuality for Partners of Trans People</h3>
       <h5>17 | Jan</h5>
