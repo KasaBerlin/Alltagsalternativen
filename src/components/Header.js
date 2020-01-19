@@ -2,15 +2,15 @@ import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
-const Header = ({navLinks,currentPath}) => {
+const Header = ({navLinks}) => {
 const [hidden,isHidden]=useState(false)
 
 function setHide(){
   isHidden(!hidden)
   $("nav").toggle();
 }
-
-const getLinks=()=>navLinks.map(({path},i)=>i<8?<li key={i}><Link replace={path === currentPath} to={"/"+path}>{path}</Link></li>:null)
+//when true, clicking the link will replace the current entry in the history stack instead of adding a new one
+const getLinks=()=>navLinks.map(({path},i)=>i<8?<li key={i}><Link to={"/"+path} replace>{path}</Link></li>:null)
 
 return(
   <header>

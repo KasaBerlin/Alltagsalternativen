@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import { HashRouter, Route, Redirect, Switch,withRouter } from "react-router-dom";
+import { HashRouter, Route, Redirect, Switch} from "react-router-dom";
 
 // components
 import Header from "./components/Header";
@@ -30,11 +30,11 @@ const routing =()=>{
     {path:"Dies Und Das",comp:DiesUndDas},
     {path:"Links",comp:Links},
     {path:"Kontakt", comp:Kontakt},
-  {path:"Impressum", comp:Impressum},
-  {path:"Datenschutz", comp:Datenschutz}
+    {path:"Impressum", comp:Impressum},
+    {path:"Datenschutz", comp:Datenschutz}
  ]
   
-  const getLinks=()=>navLinks.map(({path,comp},i)=><Route key={i} exact path={"/"+path} component={withRouter(comp)} />)
+  const getLinks=()=>navLinks.map(({path,comp},i)=><Route key={i} exact path={"/"+path} component={comp} />)
 
   return(
   <HashRouter>
